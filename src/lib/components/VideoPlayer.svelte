@@ -20,7 +20,7 @@
 	});
 
 	function connectWebSocket() {
-		ws = new WebSocket(`ws://192.144.225.219:8080/ws`);
+		ws = new WebSocket(`wss://vtoy.icechen.cn:8080/ws`);
 
 		ws.onmessage = (event) => {
 			const command: VideoCommand = JSON.parse(event.data);
