@@ -17,7 +17,7 @@
 	});
 
 	function connectWebSocket() {
-		ws = new WebSocket(`ws://${window.location.host}:3001/ws`);
+		ws = new WebSocket(`wss://${window.location.host}:3001/ws`);
 
 		ws.onmessage = (event) => {
 			const command: VideoCommand = JSON.parse(event.data);
